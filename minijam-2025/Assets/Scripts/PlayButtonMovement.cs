@@ -12,7 +12,7 @@ public class PlayButtonMovement : MonoBehaviour
     //Makes the Button have somewhere to head to at the start of the game
     void Start()
     {
-        SetNewDestination();
+        //SetNewDestination();
     }
 
     // Update is called once per frame
