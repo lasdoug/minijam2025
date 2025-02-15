@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class EyeSpawn : MonoBehaviour
+public class DOScale : MonoBehaviour
 {
     public float duration;
     public float scaleAmount;
