@@ -1380,6 +1380,8 @@ MonoBehaviour:
   timeoutLen: 1
   reboundMagnitude: 20
   torque: 0.99
+  tween: 1
+  ease: 1
 --- !u!212 &2062982659
 SpriteRenderer:
   m_ObjectHideFlags: 0
