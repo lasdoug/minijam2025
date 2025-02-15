@@ -4,14 +4,15 @@ public class PlayButtonMovement : MonoBehaviour
 {
     public float speed;
     public float range;
-    public float maxDistance;
+    public float maxDistanceX;
+    public float maxDistanceY;
 
     Vector2 wayPoint;
 
     //Makes the Button have somewhere to head to at the start of the game
     void Start()
     {
-        SetNewDestination();
+        //SetNewDestination();
     }
 
     // Update is called once per frame
@@ -30,7 +31,7 @@ public class PlayButtonMovement : MonoBehaviour
     //Gets the PlayButton to have a new wayPoint to head towards
     void SetNewDestination ()
     {
-        wayPoint = new Vector2(Random.Range(-maxDistance, maxDistance), Random.Range(-maxDistance, maxDistance));
+        wayPoint = new Vector2(Random.Range(-maxDistanceX, maxDistanceX), Random.Range(-maxDistanceY, maxDistanceY));
 
     }
 }
