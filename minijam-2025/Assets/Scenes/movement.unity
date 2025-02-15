@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 1303110091}
   - component: {fileID: 1303110092}
   m_Layer: 0
-  m_Name: mouthI_0
+  m_Name: SharkyMouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -975,7 +975,7 @@ GameObject:
   - component: {fileID: 1323098233}
   - component: {fileID: 1323098234}
   m_Layer: 0
-  m_Name: eye_red_0
+  m_Name: UnderEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 1327172797}
   - component: {fileID: 1327172798}
   m_Layer: 0
-  m_Name: eye_red_0 (1)
+  m_Name: OverEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
