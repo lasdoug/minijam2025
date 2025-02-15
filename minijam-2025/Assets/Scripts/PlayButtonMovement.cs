@@ -41,9 +41,15 @@ public class PlayButtonMovement : MonoBehaviour
 
     public void RunAway()
     {
-        speed = 3;
+        speed = 5;
         range = 0.05f;
         maxDistanceX = 7;
         maxDistanceY = 4;
+        SetNewDestination();
+    }
+
+    public void SlowRunAway()
+    {
+        speed = 3;
     }
 }
