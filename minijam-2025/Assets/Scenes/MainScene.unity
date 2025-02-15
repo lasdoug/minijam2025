@@ -667,7 +667,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.011, z: 0}
-  m_LocalScale: {x: 0.27882725, y: 0.27882725, z: 0.27882725}
+  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1278225461}
@@ -739,6 +739,7 @@ GameObject:
   - component: {fileID: 758948281}
   - component: {fileID: 758948280}
   - component: {fileID: 758948282}
+  - component: {fileID: 758948283}
   m_Layer: 0
   m_Name: StartTriggerArea
   m_TagString: Untagged
@@ -915,6 +916,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 758948283}
+        m_TargetAssemblyTypeName: ForcePush, Assembly-CSharp
+        m_MethodName: push
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &758948283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758948278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ce2ca6622c2574d8d75dff656fcc51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorRb: {fileID: 2062982661}
 --- !u!1 &1278225460
 GameObject:
   m_ObjectHideFlags: 0
