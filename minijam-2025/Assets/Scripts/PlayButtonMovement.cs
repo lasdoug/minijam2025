@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class PlayButtonMovement : MonoBehaviour
 {
-    public float speed;
-    public float range;
-    public float maxDistanceX;
-    public float maxDistanceY;
+    private float speed;
+    private float range;
+    private float maxDistanceX;
+    private float maxDistanceY;
 
     Vector2 wayPoint;
 
@@ -13,6 +13,10 @@ public class PlayButtonMovement : MonoBehaviour
     void Start()
     {
         //SetNewDestination();
+        speed = 0;
+        range = 0;
+        maxDistanceX = 0;
+        maxDistanceY = 0;
     }
 
     // Update is called once per frame
@@ -33,5 +37,13 @@ public class PlayButtonMovement : MonoBehaviour
     {
         wayPoint = new Vector2(Random.Range(-maxDistanceX, maxDistanceX), Random.Range(-maxDistanceY, maxDistanceY));
 
+    }
+
+    public void RunAway()
+    {
+        speed = 3;
+        range = 0.05f;
+        maxDistanceX = 7;
+        maxDistanceY = 4;
     }
 }
