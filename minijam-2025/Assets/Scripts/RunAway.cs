@@ -7,11 +7,17 @@ public class RunAway : MonoBehaviour
     public UnityEvent onTrigger;
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("hi");
         if (other.CompareTag("Pointer"))
         {
             onTrigger.Invoke();
             print("RUNAWAY");
         }
+    }
+
+    private void Start()
+    {
+        print("Hello :)");
     }
     /* public UnityEvent OnTriggered;
      private void OnTriggerEnter2D(Collider2D other)
