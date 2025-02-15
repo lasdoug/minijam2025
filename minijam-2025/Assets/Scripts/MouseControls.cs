@@ -11,6 +11,7 @@ public class MouseControls : MonoBehaviour
     public int mouseSlowFactor=100;
     public float timeoutLen = 1f;
     public float reboundMagnitude = 20f;
+    public float rotationCorrection = 0.99f;
     private float timeoutCounter = -1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,6 +25,8 @@ public class MouseControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        AttemptToUnrotate();
+
         if(timeoutCounter > -1){
             timeoutCounter += Time.deltaTime;
             if(timeoutCounter >= timeoutLen) timeoutCounter = -1;
@@ -32,6 +35,9 @@ public class MouseControls : MonoBehaviour
 
         if(!isSlippy) NormalMouseMove();
         else ApplyForceToMouse();
+    }
+    private void AttemptToUnrotate(){
+        transform.eulerAngles = transform.eulerAngles * rotationCorrection;
     }
     private void NormalMouseMove(){
         Vector2Control v = mouse.delta;
