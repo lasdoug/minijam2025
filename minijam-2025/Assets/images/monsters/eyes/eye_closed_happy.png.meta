@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      eye_closed_happy_0: -1570980837165726684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

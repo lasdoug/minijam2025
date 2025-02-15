@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      eye_angry_green_0: -5596938106162500169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

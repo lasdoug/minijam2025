@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      eye_psycho_light_0: 4645038547232884151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

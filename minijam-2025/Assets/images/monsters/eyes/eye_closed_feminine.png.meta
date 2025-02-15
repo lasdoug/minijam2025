@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      eye_closed_feminine_0: -2699777345931468278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
