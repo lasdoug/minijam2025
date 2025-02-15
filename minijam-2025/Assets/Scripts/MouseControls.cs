@@ -7,7 +7,7 @@ public class MouseControls : MonoBehaviour
 {
     private Mouse mouse;
     private Rigidbody2D body;
-    public bool isSlippy {get; set;}=true;
+    public bool isSlippy {get; set;}=false;
     public int mouseSlowFactor=100;
     public float timeoutLen = 1f;
     private float timeoutCounter = -1f;
