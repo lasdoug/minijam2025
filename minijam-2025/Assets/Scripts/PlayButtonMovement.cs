@@ -4,7 +4,8 @@ public class PlayButtonMovement : MonoBehaviour
 {
     public float speed;
     public float range;
-    public float maxDistance;
+    public float maxDistanceX;
+    public float maxDistanceY;
 
     Vector2 wayPoint;
 
@@ -30,7 +31,7 @@ public class PlayButtonMovement : MonoBehaviour
     //Gets the PlayButton to have a new wayPoint to head towards
     void SetNewDestination ()
     {
-        wayPoint = new Vector2(Random.Range(-maxDistance, maxDistance), Random.Range(-maxDistance, maxDistance));
+        wayPoint = new Vector2(Random.Range(-maxDistanceX, maxDistanceX), Random.Range(-maxDistanceY, maxDistanceY));
 
     }
 }
