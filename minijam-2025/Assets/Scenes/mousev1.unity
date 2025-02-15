@@ -288,7 +288,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 1
+  m_LinearDamping: 20
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -314,6 +314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4d6a403cc31d64fa3325c4e282f920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSlippy: 0
+  mouseSlowFactor: 100
 --- !u!212 &616710172
 SpriteRenderer:
   m_ObjectHideFlags: 0
