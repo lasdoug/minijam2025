@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,4 +10,5 @@ public class StartGame : MonoBehaviour
     {
         onTrigger.Invoke();
     }
+
 }

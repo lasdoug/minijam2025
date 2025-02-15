@@ -2,10 +2,15 @@ using UnityEngine;
 
 public class ForcePush : MonoBehaviour
 {
-    public Rigidbody2D cursorRb;
-
-    public void push()
+    public float pushAmount;
+    public void push(GameObject target)
     {
-        cursorRb.AddForce(Vector2.up * 500);
+        var body = target.GetComponent<Rigidbody2D>();
+        if (body != null)
+        {
+            var direction = (target.transform.position - transform.position).normalized;
+            print("triggered");
+            body.AddForce(direction * pushAmount, ForceMode2D.Impulse);
+        }
     }
 }
