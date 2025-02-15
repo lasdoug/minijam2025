@@ -14,7 +14,7 @@ public class MouseControls : MonoBehaviour
     public float reboundMagnitude = 20f;
     public float torque = 0.99f;
     public float tween=1f;
-    public Ease ease;
+    public Ease ease = Ease.Linear;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

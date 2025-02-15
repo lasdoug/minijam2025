@@ -815,7 +815,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1278225463}
         m_TargetAssemblyTypeName: PlayButtonMovement, Assembly-CSharp
-        m_MethodName: RunAway
+        m_MethodName: RunAwayWithAversion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -895,10 +895,10 @@ Transform:
   m_LocalScale: {x: 2.2961, y: 2.2961, z: 2.2961}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1132644738}
   - {fileID: 638646167}
   - {fileID: 1780428436}
   - {fileID: 1371394971}
-  - {fileID: 1132644738}
   m_Father: {fileID: 1730264438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1278225462
@@ -968,6 +968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd0721c63d525f499acd37aefde7898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runDelay: 2
+  aversion: 1
 --- !u!1 &1371394970
 GameObject:
   m_ObjectHideFlags: 0
