@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class MouseWakeUp : MonoBehaviour
+public class InputHandler : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Invoke("WakeUp", 5);
+        
     }
 
     // Update is called once per frame
