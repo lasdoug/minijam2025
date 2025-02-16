@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582559851}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 114573fb78ddf2e45b88c73ca2d5fc86, type: 3}
   m_Name: 
@@ -1901,7 +1901,7 @@ GameObject:
   - component: {fileID: 1278225465}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: PlayButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2040,6 +2040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monster_name: 
   score_value: 10
+  spawner: {fileID: 582559851}
 --- !u!1 &1352999611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,6 +2896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ebe51fa1bb9ad45930647ce974170a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!4 &1930057977
 Transform:
   m_ObjectHideFlags: 0
