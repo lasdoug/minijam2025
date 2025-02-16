@@ -3634,6 +3634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cursor
       objectReference: {fileID: 0}
+    - target: {fileID: 8732181082471073671, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
+      propertyPath: m_TagString
+      value: PointerContainer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
