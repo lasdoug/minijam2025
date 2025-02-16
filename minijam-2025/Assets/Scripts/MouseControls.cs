@@ -68,4 +68,10 @@ public class MouseControls : MonoBehaviour
             DOTween.To(()=>tween, x=>tween=x, 1, timeoutLen).SetEase(ease);
         }
     }
+
+    public void ClickTween(){
+        if(timeoutCounter > -1) return;
+
+        transform.DOPunchScale(new Vector3(0.1f,0.1f,0.1f), 0.2f, 3, 0.5f);
+    }
 }
