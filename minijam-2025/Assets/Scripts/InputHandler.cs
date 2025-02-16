@@ -15,6 +15,10 @@ public class InputHandler : MonoBehaviour
         //Checks if clicking object with a colllider
         if (collider == null) return;
         Debug.Log(collider.gameObject.name);
+        
+        if(!collider.gameObject.CompareTag("Enemy")) return;
+        GameObject monsta = collider.gameObject.transform.parent.gameObject;
+        monsta.GetComponent<Monster>().Kill();
 
     }
 }

@@ -23,9 +23,5 @@ public class Monster : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Kill monster automatically when the scene starts (for testing)
-    void Start()
-    {
-        Kill();
-    }
+    
 }
