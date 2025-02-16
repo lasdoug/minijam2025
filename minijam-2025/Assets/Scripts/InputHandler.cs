@@ -20,6 +20,6 @@ public class InputHandler : MonoBehaviour
         //Checks if clicking object with a colllider
         if (!rayHit.collider) return;
 
-        Debug.Log(rayHit.collider.gameObject.name);
+        Debug.Log("clicked");
     }
 }
