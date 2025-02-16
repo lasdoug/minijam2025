@@ -5,14 +5,10 @@ public class InputHandler : MonoBehaviour
 {
     //Referencing the main camera
     private Camera _maincamera;
-    private GameObject MyCursor;
-
 
     private void Awake()
     {
         _maincamera = Camera.main;
-        MyCursor = GameObject.FindWithTag("Pointer");
-
     }
 
     public void OnClick(InputAction.CallbackContext context)
