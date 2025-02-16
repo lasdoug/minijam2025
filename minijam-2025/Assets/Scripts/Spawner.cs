@@ -19,15 +19,18 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        if (timer < spawnRate)
+        if (monsterCounter < maxMonsters)
         {
-            timer += Time.deltaTime;
-        }
-        else if (monsterCounter <= maxMonsters)
-        {
-            Instantiate(enemy, PickSpawnLocation(), transform.rotation);
-            timer = 0;
-            monsterCounter++;
+            if (timer < spawnRate)
+            {
+                timer += Time.deltaTime;
+            }
+            else
+            {
+                Instantiate(enemy, PickSpawnLocation(), transform.rotation);
+                timer = 0;
+                monsterCounter++;
+            }
         }
     }
 

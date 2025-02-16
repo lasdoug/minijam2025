@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3033965254175228312, guid: e1fedfb62854fbe4dab4e5e847d80b17, type: 3}
   spawnRate: 1
-  maxMonsters: 0
+  maxMonsters: 10
   monsterCounter: 0
 --- !u!4 &582559853
 Transform:
@@ -1592,6 +1592,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2062982663}
+        m_TargetAssemblyTypeName: DOScale, Assembly-CSharp
+        m_MethodName: SpawnAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &758948283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,7 +1616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ce2ca6622c2574d8d75dff656fcc51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushAmount: 10
+  pushAmount: 20
 --- !u!114 &758948284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,6 +2819,21 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 54470937622975911, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
   m_PrefabInstance: {fileID: 6158367543513847932}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2062982663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062982657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ef5ecd64e818548bed1f753a487cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.3
+  scaleAmount: 1.5
+  easeType: 0
 --- !u!1001 &6158367543513847932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2866,7 +2893,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8732181082471073671, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2062982663}
   m_SourcePrefab: {fileID: 100100000, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
