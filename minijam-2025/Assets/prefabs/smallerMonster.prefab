@@ -141,8 +141,8 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6670988646609891885}
-        m_TargetAssemblyTypeName: PlayButtonMovement, Assembly-CSharp
+      - m_Target: {fileID: 1428574029695153965}
+        m_TargetAssemblyTypeName: MonsterRunAway, Assembly-CSharp
         m_MethodName: BookItOffscreen
         m_Mode: 1
         m_Arguments:
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 5477112436263291884}
   - component: {fileID: 1928992176674707499}
   - component: {fileID: 4686990216616213858}
-  - component: {fileID: 6670988646609891885}
+  - component: {fileID: 1428574029695153965}
   m_Layer: 0
   m_Name: smallerMonster
   m_TagString: Untagged
@@ -289,7 +289,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6670988646609891885
+--- !u!114 &1428574029695153965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3033965254175228312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcd0721c63d525f499acd37aefde7898, type: 3}
+  m_Script: {fileID: 11500000, guid: c24d4401dc016f74190cf8dbb2fc12a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   runDelay: 2
@@ -548,8 +548,8 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6670988646609891885}
-        m_TargetAssemblyTypeName: PlayButtonMovement, Assembly-CSharp
+      - m_Target: {fileID: 1428574029695153965}
+        m_TargetAssemblyTypeName: MonsterRunAway, Assembly-CSharp
         m_MethodName: RunAwayWithAversion
         m_Mode: 1
         m_Arguments:
@@ -575,8 +575,8 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6670988646609891885}
-        m_TargetAssemblyTypeName: PlayButtonMovement, Assembly-CSharp
+      - m_Target: {fileID: 1428574029695153965}
+        m_TargetAssemblyTypeName: MonsterRunAway, Assembly-CSharp
         m_MethodName: SlowRunAway
         m_Mode: 1
         m_Arguments:

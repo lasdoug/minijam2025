@@ -6,6 +6,8 @@ public class Spawner : MonoBehaviour
     public float spawnRate = 2;
     private float timer;
     private Vector3 spawnLocation;
+    public int maxMonsters;
+    [SerializeField] int monsterCounter;
 
     Vector3 PickSpawnLocation()
     {
@@ -21,11 +23,11 @@ public class Spawner : MonoBehaviour
         {
             timer += Time.deltaTime;
         }
-        else
+        else if (monsterCounter <= maxMonsters)
         {
             Instantiate(enemy, PickSpawnLocation(), transform.rotation);
-            print(spawnLocation);
             timer = 0;
+            monsterCounter++;
         }
     }
 
