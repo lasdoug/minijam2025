@@ -64,6 +64,7 @@ public class MouseControls : MonoBehaviour
             body.AddForce(collision.relativeVelocity * reboundMagnitude);
             transform.DOPunchScale(new Vector3(0.5f,0.5f,0.5f), timeoutLen, 10, 0.5f);
             tween = 0;
+            timeoutCounter = 0;
             DOTween.To(()=>tween, x=>tween=x, 1, timeoutLen).SetEase(ease);
         }
     }
