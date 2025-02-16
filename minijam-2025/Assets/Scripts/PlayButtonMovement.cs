@@ -72,6 +72,7 @@ public class PlayButtonMovement : MonoBehaviour
             return;
         }
         timeSinceLastRan += Time.deltaTime;
+        //move
         if(moveFunc != null) moveFunc();
         //Sets up new destination once we are close enough to current waypoint
         if (Vector2.Distance(transform.position, wayPoint) < range)
