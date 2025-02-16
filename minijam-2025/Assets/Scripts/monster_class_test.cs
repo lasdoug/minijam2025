@@ -1,24 +1,17 @@
 using UnityEngine;
 using System;
 
-// Monster class (test)
+// Monster class
 public class Monster : MonoBehaviour
 {
-    // Initialise variables
-    private string monster_name;
-    private int score_value;
+    // Assign values in Unity Inspector
+    public string monster_name;
+    public int score_value;
 
-    // Constructor
-    public void Initialise(string name, int score_value)
-    {
-        this.monster_name = name;
-        this.score_value = score_value;
-    }
-
-    // Declare kill monster event
+    // Declare event for monster kill
     public static event Action<int> OnKill;
 
-    // Kill method
+    // Kill method (called automatically in Start for testing)
     public void Kill()
     {
         Debug.Log(monster_name + " killed!! Score: +" + score_value);
@@ -30,4 +23,9 @@ public class Monster : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // Kill monster automatically when the scene starts (for testing)
+    void Start()
+    {
+        Kill();
+    }
 }
