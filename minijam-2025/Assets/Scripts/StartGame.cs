@@ -8,7 +8,7 @@ public class StartGame : MonoBehaviour
     public UnityEvent onTrigger;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        onTrigger.Invoke();
+        if (other.gameObject.CompareTag("Pointer")) onTrigger.Invoke();
     }
 
 }

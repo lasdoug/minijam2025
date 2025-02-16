@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4259782, y: 2.4259782, z: 2.4259782}
+  m_LocalScale: {x: 1.8398861, y: 1.8398861, z: 1.8398861}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5477112436263291884}
@@ -141,8 +141,8 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6670988646609891885}
-        m_TargetAssemblyTypeName: PlayButtonMovement, Assembly-CSharp
+      - m_Target: {fileID: 1428574029695153965}
+        m_TargetAssemblyTypeName: MonsterRunAway, Assembly-CSharp
         m_MethodName: BookItOffscreen
         m_Mode: 1
         m_Arguments:
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 5477112436263291884}
   - component: {fileID: 1928992176674707499}
   - component: {fileID: 4686990216616213858}
-  - component: {fileID: 6670988646609891885}
+  - component: {fileID: 1428574029695153965}
   m_Layer: 0
   m_Name: smallerMonster
   m_TagString: Untagged
@@ -289,7 +289,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6670988646609891885
+--- !u!114 &1428574029695153965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3033965254175228312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcd0721c63d525f499acd37aefde7898, type: 3}
+  m_Script: {fileID: 11500000, guid: c24d4401dc016f74190cf8dbb2fc12a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   runDelay: 2
@@ -314,7 +314,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5548315509298879675}
   - component: {fileID: 4828900102013075677}
-  - component: {fileID: 6054478591913337612}
   m_Layer: 0
   m_Name: mouth_closed_teeth_0
   m_TagString: Untagged
@@ -381,7 +380,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -7282380282856232, guid: af8206cb19a140f4db16d6383840c944, type: 3}
+  m_Sprite: {fileID: -6319567123012772914, guid: dbbd120d724975e4293684d399332d6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -392,21 +391,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6054478591913337612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3808309817206622506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89ef5ecd64e818548bed1f753a487cef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.5
-  scaleAmount: 0.4
-  easeType: 30
 --- !u!1 &8649264213802377588
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +421,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.8203273, y: 3.8203273, z: 3.8203273}
+  m_LocalScale: {x: 2.8973744, y: 2.8973744, z: 2.8973744}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5477112436263291884}
@@ -548,8 +532,8 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6670988646609891885}
-        m_TargetAssemblyTypeName: PlayButtonMovement, Assembly-CSharp
+      - m_Target: {fileID: 1428574029695153965}
+        m_TargetAssemblyTypeName: MonsterRunAway, Assembly-CSharp
         m_MethodName: RunAwayWithAversion
         m_Mode: 1
         m_Arguments:
@@ -575,8 +559,8 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6670988646609891885}
-        m_TargetAssemblyTypeName: PlayButtonMovement, Assembly-CSharp
+      - m_Target: {fileID: 1428574029695153965}
+        m_TargetAssemblyTypeName: MonsterRunAway, Assembly-CSharp
         m_MethodName: SlowRunAway
         m_Mode: 1
         m_Arguments:

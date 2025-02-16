@@ -6,6 +6,6 @@ public class TriggerExit : MonoBehaviour
     public UnityEvent onTrigger;
     private void OnTriggerExit2D(Collider2D other)
     {
-        onTrigger.Invoke();
+        if (other.gameObject.CompareTag("Pointer")) onTrigger.Invoke();
     }
 }
