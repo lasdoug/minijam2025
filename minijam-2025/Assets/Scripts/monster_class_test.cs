@@ -12,6 +12,11 @@ public class Monster : MonoBehaviour
     // Declare event for monster kill
     public static event Action<int> OnKill;
 
+    void Start()
+    {
+        spawner = GameObject.FindGameObjectsWithTag("spawner")[0];
+    }
+
     // Kill method (called automatically in Start for testing)
     public void Kill()
     {
@@ -22,6 +27,10 @@ public class Monster : MonoBehaviour
 
         if(gameObject.CompareTag("PlayButton") && spawner != null){
             spawner.SetActive(true);
+        }
+        else
+        {
+            spawner.GetComponent<Spawner>().RemoveMonster();
         }
 
         // Destroy monster object

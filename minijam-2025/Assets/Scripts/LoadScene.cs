@@ -15,6 +15,7 @@ public class LoadScene : MonoBehaviour
         else
         {
             SceneManager.LoadScene(sceneName);
+            HealthManager.health = 3;
         }
 
     }

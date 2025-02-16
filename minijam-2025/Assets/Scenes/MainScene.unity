@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 582559854}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1258,7 +1258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3033965254175228312, guid: e1fedfb62854fbe4dab4e5e847d80b17, type: 3}
   spawnRate: 2
-  maxMonsters: 5
+  maxMonsters: 10
   monsterCounter: 0
 --- !u!4 &582559853
 Transform:
@@ -1284,12 +1284,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 582559851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 114573fb78ddf2e45b88c73ca2d5fc86, type: 3}
+  m_Script: {fileID: 11500000, guid: e63a973afbe7dbd47ab3e5d56961cc06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3033965254175228312, guid: 568fb1980cc34454d9ff5c640c377f13, type: 3}
-  spawnRate: 3
-  maxMonsters: 3
+  spawnRate: 4
+  maxMonsters: 4
   monsterCounter: 0
 --- !u!1 &619394800
 GameObject:
@@ -3601,11 +3601,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 996116923951522094, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.65
+      value: 7.08
       objectReference: {fileID: 0}
     - target: {fileID: 996116923951522094, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.67
+      value: 3.65
       objectReference: {fileID: 0}
     - target: {fileID: 996116923951522094, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
       propertyPath: m_LocalPosition.z

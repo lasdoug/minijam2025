@@ -21,9 +21,9 @@ public class MoveTowards : MonoBehaviour
     {
         print("collided");
         if (collision.collider.CompareTag("PointerContainer")) {
-            gameObject.SetActive(false);
             HealthManager.health--;
             Cursor.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity * -70);
+            Destroy(gameObject);
         }
     }
 }
