@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     {
         var x = Random.Range(-10f, 10f);
         var y = Random.Range(-5f, 5f);
-        spawnLocation.Set(x, y, 0);
+        spawnLocation.Set(x, y, -2);
         return spawnLocation;
     }
 
