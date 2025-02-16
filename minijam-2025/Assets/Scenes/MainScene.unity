@@ -1114,6 +1114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3033965254175228312, guid: e1fedfb62854fbe4dab4e5e847d80b17, type: 3}
   spawnRate: 1
+  maxMonsters: 0
+  monsterCounter: 0
 --- !u!4 &582559853
 Transform:
   m_ObjectHideFlags: 0
@@ -1578,7 +1580,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2062982659}
+      - m_Target: {fileID: 2062982661}
         m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
         m_MethodName: set_sprite
         m_Mode: 2
@@ -2800,6 +2802,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4d6a403cc31d64fa3325c4e282f920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &2062982661 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 54470937622975911, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
+  m_PrefabInstance: {fileID: 6158367543513847932}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6158367543513847932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2847,6 +2854,10 @@ PrefabInstance:
     - target: {fileID: 996116923951522094, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719069615869225035, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
+      propertyPath: m_TagString
+      value: Pointer
       objectReference: {fileID: 0}
     - target: {fileID: 8732181082471073671, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
       propertyPath: m_Name
