@@ -5,11 +5,19 @@ public class InputHandler : MonoBehaviour
 {
     
     public GameObject clickBit;
+    private MouseControls mouseControls;
+
+    void Start()
+    {
+        mouseControls = FindAnyObjectByType<MouseControls>();
+    }
 
     public void OnClick(InputAction.CallbackContext context)
     {
         //If not clicked
         if (!context.started) return;
+
+        mouseControls.ClickTween();
 
         Collider2D collider = Physics2D.OverlapPoint(clickBit.transform.position, layerMask: 1, minDepth: -100f, maxDepth: -1f);
         //Checks if clicking object with a colllider
