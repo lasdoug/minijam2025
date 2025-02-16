@@ -390,7 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LittleMonster: {fileID: 3033965254175228312}
   Cursor: {fileID: 0}
-  speed: 1
+  speed: 2
 --- !u!58 &2972894242843728930
 CircleCollider2D:
   m_ObjectHideFlags: 0
