@@ -5,6 +5,7 @@ public class InputHandler : MonoBehaviour
 {
     //Referencing the main camera
     private Camera _maincamera;
+    public GameObject clickBit;
 
     private void Awake()
     {
@@ -16,7 +17,9 @@ public class InputHandler : MonoBehaviour
         //If not clicked
         if (!context.started) return;
 
-        var rayHit = Physics2D.GetRayIntersection(_maincamera.ScreenPointToRay(pos:(Vector2)Mouse.current.position.ReadValue()));
+        Debug.Log("clicked???");
+        //var rayHit = Physics2D.GetRayIntersection(_maincamera.ScreenPointToRay(pos:clickBit.transform.position));
+        var rayHit = Physics2D.GetRayIntersection(new Ray(clickBit.transform.position, Vector2.down));
         //Checks if clicking object with a colllider
         if (!rayHit.collider) return;
 
