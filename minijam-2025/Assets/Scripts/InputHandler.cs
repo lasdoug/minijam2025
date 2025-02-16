@@ -13,12 +13,14 @@ public class InputHandler : MonoBehaviour
 
         Collider2D collider = Physics2D.OverlapPoint(clickBit.transform.position, layerMask: 1, minDepth: -100f, maxDepth: -1f);
         //Checks if clicking object with a colllider
-        if (collider == null) return;
-        Debug.Log(collider.gameObject.name);
+        if (collider != null && collider.gameObject.CompareTag("Enemy"))
+        {
+            if(!collider.gameObject.CompareTag("Enemy")) return;
+            GameObject monsta = collider.gameObject.transform.parent.gameObject;
+            monsta.GetComponent<Monster>().Kill();
+        }
         
-        if(!collider.gameObject.CompareTag("Enemy")) return;
-        GameObject monsta = collider.gameObject.transform.parent.gameObject;
-        monsta.GetComponent<Monster>().Kill();
+        
 
     }
 }
