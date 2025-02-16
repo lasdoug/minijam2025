@@ -4,7 +4,7 @@ using TMPro; // TextMeshPro
 public class Scoring : MonoBehaviour
 {
     private int total_score = 0;
-    public TMP_Text scoreText; 
+    public TMP_Text score_text; 
 
     void OnEnable()
     {
@@ -22,9 +22,9 @@ public class Scoring : MonoBehaviour
         Debug.Log("Total Score: " + total_score);
 
         // ✅ Ensure TMP_Text is updating
-        if (scoreText != null)
+        if (score_text != null)
         {
-            scoreText.text = "Total Score: " + total_score;
+            score_text.text = "Total Score: " + total_score;
         }
         else
         {
