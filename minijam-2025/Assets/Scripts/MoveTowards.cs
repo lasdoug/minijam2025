@@ -10,7 +10,7 @@ public class MoveTowards : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LittleMonster.transform.position = Vector2.MoveTowards(LittleMonster.transform.position, Cursor.transform.position, speed);
+        LittleMonster.transform.position = Vector2.MoveTowards(LittleMonster.transform.position, Cursor.transform.position, speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
