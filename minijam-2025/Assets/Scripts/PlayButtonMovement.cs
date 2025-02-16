@@ -11,6 +11,7 @@ public class PlayButtonMovement : MonoBehaviour
     private float maxDistanceY;
 
     private float timeSinceLastRan=0f;
+    public bool startRunning { get; set; } = false;
     public float runDelay=2f;
 
     Vector2 wayPoint;
@@ -66,7 +67,12 @@ public class PlayButtonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!startRunning)
+        {
+            return;
+        }
         timeSinceLastRan += Time.deltaTime;
+        //move
         if(moveFunc != null) moveFunc();
         //Sets up new destination once we are close enough to current waypoint
         if (Vector2.Distance(transform.position, wayPoint) < range)
