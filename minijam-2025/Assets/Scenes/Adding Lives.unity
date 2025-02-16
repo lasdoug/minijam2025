@@ -376,7 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LittleMonster: {fileID: 176306770}
   Cursor: {fileID: 973039247}
-  speed: 0.05
+  speed: 1
 --- !u!212 &176306773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LittleMonster: {fileID: 461564854}
   Cursor: {fileID: 973039247}
-  speed: 0.05
+  speed: 1
 --- !u!212 &461564856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1641,7 +1641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LittleMonster: {fileID: 1225028867}
   Cursor: {fileID: 973039247}
-  speed: 0.05
+  speed: 1
 --- !u!212 &1225028870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2045,7 +2045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LittleMonster: {fileID: 1683367497}
   Cursor: {fileID: 973039247}
-  speed: 0.05
+  speed: 1
 --- !u!212 &1683367500
 SpriteRenderer:
   m_ObjectHideFlags: 0
