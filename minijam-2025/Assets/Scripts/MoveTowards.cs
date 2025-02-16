@@ -9,7 +9,7 @@ public class MoveTowards : MonoBehaviour
 
     void Start()
     {
-        Cursor = GameObject.FindGameObjectsWithTag("Pointer")[0];
+        Cursor = GameObject.FindGameObjectsWithTag("PointerContainer")[0];
     }
     // Update is called once per frame
     void Update()
@@ -20,9 +20,10 @@ public class MoveTowards : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         print("collided");
-        if (collision.transform.tag == "Pointer") {
-           gameObject.SetActive(false);
+        if (collision.collider.CompareTag("PointerContainer")) {
+            gameObject.SetActive(false);
             HealthManager.health--;
+            Cursor.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity * -70);
         }
     }
 }
