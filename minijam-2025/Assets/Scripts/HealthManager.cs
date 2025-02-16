@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
@@ -7,7 +8,6 @@ public class HealthManager : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-
 
     // Update is called once per frame
     void Update()
@@ -21,5 +21,9 @@ public class HealthManager : MonoBehaviour
             hearts[i].sprite = fullHeart;
         }
 
+        if (health == 0)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
     }
 }

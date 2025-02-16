@@ -7,6 +7,10 @@ public class MoveTowards : MonoBehaviour
     public GameObject Cursor;
     public float speed;
 
+    void Start()
+    {
+        Cursor = GameObject.FindGameObjectsWithTag("Pointer")[0];
+    }
     // Update is called once per frame
     void Update()
     {
@@ -15,6 +19,7 @@ public class MoveTowards : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        print("collided");
         if (collision.transform.tag == "Pointer") {
            gameObject.SetActive(false);
             HealthManager.health--;
