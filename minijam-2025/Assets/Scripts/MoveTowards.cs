@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MoveTowards : MonoBehaviour
@@ -11,4 +12,13 @@ public class MoveTowards : MonoBehaviour
     {
         LittleMonster.transform.position = Vector2.MoveTowards(LittleMonster.transform.position, Cursor.transform.position, speed);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Pointer") {
+           gameObject.SetActive(false);
+            HealthManager.health--;
+        }
+    }
 }
+
