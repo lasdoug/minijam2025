@@ -4,7 +4,8 @@ using TMPro; // TextMeshPro
 public class Scoring : MonoBehaviour
 {
     private int total_score = 0;
-    public TMP_Text score_text; 
+    public TMP_Text score_text;
+    public TMP_Text final_score_text;
 
     void OnEnable()
     {
@@ -28,7 +29,16 @@ public class Scoring : MonoBehaviour
         }
         else
         {
-            Debug.LogError("ScoreText (TMP) UI is not assigned!");
+            // Debug.LogError("ScoreText (TMP) UI is not assigned!");
         }
     }
+
+    void Start()
+    {
+        if (final_score_text != null)
+        {
+            final_score_text.text = "Final Score: " + total_score;
+        }
+    }
+    
 }

@@ -20,7 +20,7 @@ public class Monster : MonoBehaviour
     // Kill method (called automatically in Start for testing)
     public void Kill()
     {
-        Debug.Log(monster_name + " killed!! Score: +" + score_value);
+        // Debug.Log(monster_name + " killed!! Score: +" + score_value);
 
         // Trigger OnKill event
         OnKill?.Invoke(score_value);
