@@ -4,10 +4,19 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public string sceneName;
-
-    public void NewScene()
+    private float timer = 0;
+    public float threshold;
+    void Update()
     {
-        SceneManager.LoadScene(sceneName);
+        if (timer < threshold)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+
     }
     
 }

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Deadheart_0: 2374723878386204198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
