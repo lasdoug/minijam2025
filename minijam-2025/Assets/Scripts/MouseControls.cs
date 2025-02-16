@@ -14,7 +14,7 @@ public class MouseControls : MonoBehaviour
     public float reboundMagnitude = 20f;
     public float torque = 0.99f;
     public float tween=1f;
-    public Ease ease = Ease.Linear;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,10 +34,12 @@ public class MouseControls : MonoBehaviour
         if(timeoutCounter > -1){
             timeoutCounter += Time.deltaTime;
             if(timeoutCounter >= timeoutLen) timeoutCounter = -1;
-            return;
         }
 
-        if(!isSlippy) NormalMouseMove();
+        if(!isSlippy){
+            timeoutCounter = -1f;
+            NormalMouseMove();
+        }
         else ApplyForceToMouse();
     }
     private void AttemptToUnrotate(){
@@ -53,7 +55,7 @@ public class MouseControls : MonoBehaviour
         Vector2Control v = mouse.delta;
         float x = v.x.ReadValue();
         float y = v.y.ReadValue();
-        body.AddForce(new Vector2(x,y) * tween);
+        body.AddForce(new Vector2(x* tween,y* tween) );
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -65,7 +67,7 @@ public class MouseControls : MonoBehaviour
             transform.DOPunchScale(new Vector3(0.5f,0.5f,0.5f), timeoutLen, 10, 0.5f);
             tween = 0;
             timeoutCounter = 0;
-            DOTween.To(()=>tween, x=>tween=x, 1, timeoutLen).SetEase(ease);
+            DOTween.To(()=>tween, x=>tween=x, 1, timeoutLen).SetEase(Ease.Linear);
         }
     }
 
