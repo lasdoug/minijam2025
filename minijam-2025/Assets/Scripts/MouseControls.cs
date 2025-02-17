@@ -22,6 +22,7 @@ public class MouseControls : MonoBehaviour
         body = gameObject.GetComponent<Rigidbody2D>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
+        WebGLInput.stickyCursorLock = true;
     }
 
     // Update is called once per frame
