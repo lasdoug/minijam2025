@@ -17,6 +17,11 @@ public class Spawner : MonoBehaviour
         return spawnLocation;
     }
 
+    void OnEnable()
+    {
+        Instantiate(enemy, PickSpawnLocation(), transform.rotation);
+        monsterCounter++;
+    }
     void Update()
     {
         if (monsterCounter < maxMonsters)

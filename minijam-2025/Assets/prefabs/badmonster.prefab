@@ -390,7 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LittleMonster: {fileID: 3033965254175228312}
   Cursor: {fileID: 0}
-  speed: 4
+  speed: 3
 --- !u!58 &2972894242843728930
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -530,7 +530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5548315509298879675
 Transform:
   m_ObjectHideFlags: 0
