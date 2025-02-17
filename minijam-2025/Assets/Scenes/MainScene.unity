@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3033965254175228312, guid: e1fedfb62854fbe4dab4e5e847d80b17, type: 3}
-  spawnRate: 3
+  spawnRate: 2.5
   maxMonsters: 5
   monsterCounter: 0
   isSpawning: 0

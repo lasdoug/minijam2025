@@ -13,8 +13,8 @@ public class EnemySpawner : MonoBehaviour
 
     Vector3 PickSpawnLocation()
     {
-        var x = Random.Range(-10f, 10f);
-        var y = Random.Range(-5f, 5f);
+        var x = Random.Range(-9f, 9f);
+        var y = Random.Range(-4f, 4f);
         spawnLocation.Set(x, y, -2);
         return spawnLocation;
     }
