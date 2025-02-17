@@ -8,6 +8,8 @@ public class EnemySpawner : MonoBehaviour
     private Vector3 spawnLocation;
     public int maxMonsters;
     public int monsterCounter;
+    public bool isSpawning;
+    
 
     Vector3 PickSpawnLocation()
     {
@@ -16,20 +18,30 @@ public class EnemySpawner : MonoBehaviour
         spawnLocation.Set(x, y, -2);
         return spawnLocation;
     }
-
+    
+    void SpawnMonster()
+    {
+        if (isSpawning)
+        {
+            Instantiate(enemy, PickSpawnLocation(), transform.rotation);
+            monsterCounter++;
+        }
+    }
     void Update()
     {
-        if (monsterCounter < maxMonsters)
+        if (isSpawning)
         {
-            if (timer < spawnRate)
+            if (monsterCounter < maxMonsters)
             {
-                timer += Time.deltaTime;
-            }
-            else
-            {
-                Instantiate(enemy, PickSpawnLocation(), transform.rotation);
-                timer = 0;
-                monsterCounter++;
+                if (timer < spawnRate)
+                {
+                    timer += Time.deltaTime;
+                }
+                else
+                {
+                    SpawnMonster();
+                    timer = 0;
+                }
             }
         }
     }
@@ -37,5 +49,11 @@ public class EnemySpawner : MonoBehaviour
     public void RemoveMonster()
     {
         monsterCounter--;
+    }
+
+    public void StartSpawning()
+    {
+        isSpawning = true;
+        SpawnMonster();
     }
 }

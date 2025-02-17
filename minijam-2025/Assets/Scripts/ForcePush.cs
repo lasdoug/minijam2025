@@ -9,7 +9,6 @@ public class ForcePush : MonoBehaviour
         if (body != null)
         {
             var direction = (target.transform.position - transform.position).normalized;
-            print("triggered");
             body.AddForce(direction * pushAmount, ForceMode2D.Impulse);
         }
     }

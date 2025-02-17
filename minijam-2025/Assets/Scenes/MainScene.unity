@@ -1256,7 +1256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &582559852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,9 +1270,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3033965254175228312, guid: e1fedfb62854fbe4dab4e5e847d80b17, type: 3}
-  spawnRate: 2
-  maxMonsters: 7
+  spawnRate: 3
+  maxMonsters: 5
   monsterCounter: 0
+  isSpawning: 0
 --- !u!4 &582559853
 Transform:
   m_ObjectHideFlags: 0
@@ -1301,9 +1302,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3033965254175228312, guid: 568fb1980cc34454d9ff5c640c377f13, type: 3}
-  spawnRate: 4
+  spawnRate: 5
   maxMonsters: 4
   monsterCounter: 0
+  isSpawning: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,7 +1491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
-  scaleAmount: 0.3
+  scaleAmount: 0.27
   easeType: 30
 --- !u!1 &758948278
 GameObject:
@@ -2225,7 +2227,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 72094353f2185a049a179cfbf95b625c, type: 3}
   m_Resource: {fileID: 8300000, guid: 72094353f2185a049a179cfbf95b625c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2614,7 +2616,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monster_name: 
   score_value: 1
-  spawner: {fileID: 582559851}
 --- !u!1 &1316483897
 GameObject:
   m_ObjectHideFlags: 0

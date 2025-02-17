@@ -75,6 +75,6 @@ public class MouseControls : MonoBehaviour
     public void ClickTween(){
         if(timeoutCounter > -1) return;
 
-        transform.DOPunchScale(new Vector3(0.1f,0.1f,0.1f), 0.2f, 3, 0.5f);
+        transform.DOPunchScale(new Vector3(0.3f,0.3f,0.3f), 0.1f, 3, 0f);
     }
 }
