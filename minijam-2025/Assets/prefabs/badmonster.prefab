@@ -360,7 +360,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5812192589494935979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LittleMonster: {fileID: 3033965254175228312}
   Cursor: {fileID: 0}
-  speed: 3
+  minSpeed: 1
+  maxSpeed: 4
 --- !u!58 &2972894242843728930
 CircleCollider2D:
   m_ObjectHideFlags: 0
