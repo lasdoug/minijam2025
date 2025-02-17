@@ -20,9 +20,9 @@ public class MouseControls : MonoBehaviour
     {
         mouse = Mouse.current;
         body = gameObject.GetComponent<Rigidbody2D>();
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Confined;
-        WebGLInput.stickyCursorLock = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        //WebGLInput.stickyCursorLock = true;
     }
 
     // Update is called once per frame
