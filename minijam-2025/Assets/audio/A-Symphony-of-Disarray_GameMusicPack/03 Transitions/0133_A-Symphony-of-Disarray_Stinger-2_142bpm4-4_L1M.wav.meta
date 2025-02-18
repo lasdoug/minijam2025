@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 29fc69db43e2b4f718974e43ad8ccd4f
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217536
+  packageName: A Symphony of Disarray - Game Music Pack
+  packageVersion: 1.0
+  assetPath: Assets/A-Symphony-of-Disarray_GameMusicPack/03 Transitions/0133_A-Symphony-of-Disarray_Stinger-2_142bpm4-4_L1M.wav
+  uploadId: 491571
