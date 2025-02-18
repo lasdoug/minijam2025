@@ -4,11 +4,15 @@ public class Spawner : MonoBehaviour
 {
     public GameObject enemy;
     public float spawnRate = 2;
-    private float timer;
-    private Vector3 spawnLocation;
     public int maxMonsters;
     public int monsterCounter;
     public bool isSpawning;
+    public int zIndex;
+    
+    private float timer;
+    private SpriteRenderer enemyBodySpriteRenderer;
+    private Vector3 spawnLocation;
+
 
     Vector3 PickSpawnLocation()
     {
@@ -22,8 +26,16 @@ public class Spawner : MonoBehaviour
     {
         if (isSpawning)
         {
-        Instantiate(enemy, PickSpawnLocation(), transform.rotation);
-        monsterCounter++;
+            GameObject newEnemy = Instantiate(enemy, PickSpawnLocation(), transform.rotation);
+            enemyBodySpriteRenderer = newEnemy.GetComponent<SpriteRenderer>();
+            enemyBodySpriteRenderer.sortingOrder = zIndex;
+            zIndex++;
+            monsterCounter++;
+            for (int i = 0; i < newEnemy.transform.childCount; i++)
+            {
+                newEnemy.transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = zIndex;
+            }
+            zIndex++;
         }
     }
     void Update()

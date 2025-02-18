@@ -32,7 +32,7 @@ public class MoveTowards : MonoBehaviour
         }
 
         else if(collision.collider.GetComponent<Rigidbody2D>() != null){
-            print("boing");
+            // print("boing");
             Vector2 hereToOther = new Vector2(collision.collider.transform.position.x - transform.position.x, collision.collider.transform.position.y - transform.position.y).normalized;
             float magnitude = Random.Range(40f, 100f);
             collision.collider.GetComponent<Rigidbody2D>().AddForce(hereToOther * magnitude);
