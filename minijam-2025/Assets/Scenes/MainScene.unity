@@ -1274,6 +1274,7 @@ MonoBehaviour:
   maxMonsters: 5
   monsterCounter: 0
   isSpawning: 0
+  zIndex: 0
 --- !u!4 &582559853
 Transform:
   m_ObjectHideFlags: 0
@@ -3843,6 +3844,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 54470937622975911, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20000
+      objectReference: {fileID: 0}
     - target: {fileID: 996116923951522094, guid: f5e76af7d41e07c478910bdb7695be30, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.08
